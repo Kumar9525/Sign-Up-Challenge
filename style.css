@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  background-color: antiquewhite;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 12px;
+  font-weight: 400;
+}
+.container {
+  width: 500px;
+  height: 250px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.email-box,
+.password-box {
+  width: 360px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 6px;
+  margin: 10px 0;
+}
+
+.worng {
+  color: red;
+}
+#btn {
+  width: 128px;
+  height: 27px;
+  background-color: white;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.password-input {
+  margin-top: 5px;
+}
+
+.success-msg {
+  color: #219f35;
+}

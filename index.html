@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up From</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="singupForm">
+        <div class="email-input">
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            id="email"
+            class="email-box"
+            placeholder="Example@gmail.com"
+            oninput="validateEmail()"
+            required
+          />
+        </div>
+        <span id="emailError" class="worng"></span>
+        <div class="password-input">
+          <label for="password" class="password-text">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            class="password-box"
+            placeholder="Your Password"
+            oninput="validatePassword()"
+            required
+          />
+        </div>
+        <span id="passwordError" class="worng"></span><br />
+        <span id="successMsg" class="success-msg"></span><br />
+        <button id="btn" onclick="handleSubmit()">Submit</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
